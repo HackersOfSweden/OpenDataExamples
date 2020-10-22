@@ -1,0 +1,1 @@
+https://helsingborg.opendatasoft.com/explore/dataset/stompunkter-plan/api/
