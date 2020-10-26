@@ -16,10 +16,11 @@ request.onload = function () {
     
     data.records.forEach(record => {
       const wordpress = document.createElement('div');
-      wordpress.setAttribute('class', 'wordpress');
+      wordpress.setAttribute('class', 'record-container');
 
-      const h1 = document.createElement('h1');
-      h1.textContent = + record.fields.namn;
+      const h3 = document.createElement('h3');
+      h3.setAttribute('class', 'record-title')
+      h3.textContent = + record.fields.namn;
 
       const p = document.createElement('p');
       p.textContent =  "Datasetid :" + record.datasetid;
@@ -43,7 +44,7 @@ request.onload = function () {
       p9.textContent =  "Record_Timestamp :" + record.record_timestamp;
 
       container.appendChild(wordpress);
-      wordpress.appendChild(h1);
+      wordpress.appendChild(h3);
       wordpress.appendChild(p);
       wordpress.appendChild(p1);
       wordpress.appendChild(p2);
