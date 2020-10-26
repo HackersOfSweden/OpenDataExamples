@@ -56,7 +56,7 @@ request.onload = function () {
 
                 //If the innerProperty is an object, create a nested unordered list
                 if (typeof (innerProperty) === "object") {
-                    paragraphContent += "<li> Key: " + property + "<ul>";
+                    paragraphContent += "<li>" + property + "<ul>";
                     //Then loop through all the values within the object and created new list item for them
                     for (const innerValue in innerProperty) {
 
@@ -66,12 +66,12 @@ request.onload = function () {
 
                         //If the value type is an object, create a nested unordered list
                         if (typeof (secondLevelValue) === "object") {
-                            paragraphContent += "<li> Key: " + innerValue + "<ul>";
+                            paragraphContent += "<li>" + innerValue + "<ul>";
                             //Then loop through all the values within the object and created new list item for them
                             for (const secondLevelProperty in secondLevelValue) {
                                 //If the secondLevelProperty title is "coordinates" create another unordered list
                                 if (secondLevelProperty == "coordinates") {
-                                    paragraphContent += "<li> Key: " + secondLevelProperty + "<ul>";
+                                    paragraphContent += "<li>" + secondLevelProperty + "<ul>";
 
                                     //Assign the coordinates to a variable and create counter variable
                                     let coordinates = secondLevelValue[secondLevelProperty];
@@ -81,14 +81,14 @@ request.onload = function () {
                                     coordinates.forEach(coordsToSplit => {
                                         coordsToSplit.forEach(coordsToPrint => {
                                             //Add coordinates pair to the list
-                                            paragraphContent += "<li> Key: Set " + coordinateCounter + " &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Value: " + coordsToPrint + "</li>";
+                                            paragraphContent += "<li>Set " + coordinateCounter + " &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Value: " + coordsToPrint + "</li>";
                                             coordinateCounter++;
                                         });
 
                                     });
                                     paragraphContent += "</ul></li>";
                                 } else {
-                                    paragraphContent += "<li> Key: " + secondLevelProperty + " &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Value: " + secondLevelValue[secondLevelProperty] + "</li>";
+                                    paragraphContent += "<li>" + secondLevelProperty + " &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Value: " + secondLevelValue[secondLevelProperty] + "</li>";
                                 }
 
                             }
@@ -96,20 +96,14 @@ request.onload = function () {
                         } else {
                             //Else if the innerProperty is not an object, print that property and it's value in the 
                             //outer unordered list
-                            paragraphContent += "<li> Key: " + innerValue + " &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Value: " + secondLevelValue + "</li>";
+                            paragraphContent += "<li>" + innerValue + " &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Value: " + secondLevelValue + "</li>";
                         }
-
-
-
-
-
-
                     }
                     paragraphContent += "</ul></li>";
                 } else {
                     //Else if the innerProperty is not an object, print that property and it's value in the 
                     //outer unordered list
-                    paragraphContent += "<li> Key: " + property + " &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Value: " + innerProperty + "</li>";
+                    paragraphContent += "<li>" + property + " &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Value: " + innerProperty + "</li>";
                 }
             }
 

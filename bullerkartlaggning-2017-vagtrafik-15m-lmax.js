@@ -10,7 +10,7 @@ app.appendChild(container);
 var request = new XMLHttpRequest();
 
 //Using GET on API and calling function when API loads
-request.open('GET', 'https://helsingborg.opendatasoft.com/api/records/1.0/search/?dataset=mark-punkt&q=', true);
+request.open('GET', 'https://helsingborg.opendatasoft.com/api/records/1.0/search/?dataset=bullerkartlaggning-2017-vagtrafik-15m-lmax&q=', true);
 request.onload = function () {
 
     //Parsing JSON response and assigning to data
@@ -25,7 +25,7 @@ request.onload = function () {
 
         //Looping through records which are stored in an array within data variable
         data.records.forEach(record => {
-
+            console.log(record);
             //Creating a record-container element and assigning class to it
             const recordContainer = document.createElement('div');
             recordContainer.setAttribute('class', 'record-container');
@@ -56,17 +56,54 @@ request.onload = function () {
 
                 //If the innerProperty is an object, create a nested unordered list
                 if (typeof (innerProperty) === "object") {
-                    
                     paragraphContent += "<li>" + property + "<ul>";
                     //Then loop through all the values within the object and created new list item for them
                     for (const innerValue in innerProperty) {
-                        paragraphContent += "<li>" + innerValue + "  &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;   Value: " + innerProperty[innerValue] + "</li>";
+
+                        //Creating a variable secondLevelValue which stores the
+                        //value within the record
+                        var secondLevelValue = innerProperty[innerValue];
+
+                        //If the value type is an object, create a nested unordered list
+                        if (typeof (secondLevelValue) === "object") {
+                            paragraphContent += "<li>" + innerValue + "<ul>";
+                            //Then loop through all the values within the object and created new list item for them
+                            for (const secondLevelProperty in secondLevelValue) {
+                                //If the secondLevelProperty title is "coordinates" create another unordered list
+                                if (secondLevelProperty == "coordinates") {
+                                    paragraphContent += "<li>" + secondLevelProperty + "<ul>";
+
+                                    //Assign the coordinates to a variable and create counter variable
+                                    let coordinates = secondLevelValue[secondLevelProperty];
+                                    let coordinateCounter = 1;
+
+                                    //Loop through array of coordinates to get the coordinate pairs
+                                    coordinates.forEach(coordsToSplit => {
+                                        coordsToSplit.forEach(coordsToPrint => {
+                                            //Add coordinates pair to the list
+                                            paragraphContent += "<li>Set " + coordinateCounter + " &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Value: " + coordsToPrint + "</li>";
+                                            coordinateCounter++;
+                                        });
+
+                                    });
+                                    paragraphContent += "</ul></li>";
+                                } else {
+                                    paragraphContent += "<li>" + secondLevelProperty + " &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Value: " + secondLevelValue[secondLevelProperty] + "</li>";
+                                }
+
+                            }
+                            paragraphContent += "</ul></li>";
+                        } else {
+                            //Else if the innerProperty is not an object, print that property and it's value in the 
+                            //outer unordered list
+                            paragraphContent += "<li>" + innerValue + " &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Value: " + secondLevelValue + "</li>";
+                        }
                     }
                     paragraphContent += "</ul></li>";
                 } else {
                     //Else if the innerProperty is not an object, print that property and it's value in the 
                     //outer unordered list
-                    paragraphContent += "<li>" + property + "     Value: " + innerProperty + "</li>";
+                    paragraphContent += "<li>" + property + " &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Value: " + innerProperty + "</li>";
                 }
             }
 

@@ -30,6 +30,7 @@
     margin: 20px;
     display: flex;
     flex-direction: column;
+    min-width: 250px;
 }
 
 
@@ -47,6 +48,10 @@
 
 ul ul {
     padding-left: 30px;
+}
+
+ul li, ul ul li {
+    word-wrap: break-word;
 }
 
 .right-align-span {
