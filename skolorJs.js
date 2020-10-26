@@ -18,10 +18,11 @@ request.onload = function () {
     data.records.forEach(intoRecord => {
 
       const pplats = document.createElement('div');
-      pplats.setAttribute('class', 'pplats');
+      pplats.setAttribute('class', 'record-container');
 
-      const h1 = document.createElement('h1');
-      h1.textContent = intoRecord.fields.omrade;
+      const h3 = document.createElement('h3');
+      h3.setAttribute('class', 'record-title')
+      h3.textContent = intoRecord.fields.omrade;
 
       const p = document.createElement('p');
       p.textContent = "datasetid : " + intoRecord.datasetid;
@@ -69,7 +70,7 @@ request.onload = function () {
       p15.textContent ="record_timestamp : " + intoRecord.record_timestamp;
 
       container.appendChild(pplats);
-      pplats.appendChild(h1);
+      pplats.appendChild(h3);
       pplats.appendChild(p);
       pplats.appendChild(p2);
       pplats.appendChild(p3);

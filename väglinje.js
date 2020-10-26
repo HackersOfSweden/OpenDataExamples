@@ -10,9 +10,10 @@ request.onload = function () {
   if (request.status >= 200 && request.status < 400) {
     data.records.forEach(intorecord => {
       const pplats = document.createElement('div');
-      pplats.setAttribute('class', 'pplats');
-      const h1 = document.createElement('h1');
-      h1.textContent = + intorecord.fields.namn;
+      pplats.setAttribute('class', 'record-container');
+      const h3 = document.createElement('h3');
+      h3.setAttribute('class', 'record-title')
+      h3.textContent = + intorecord.datasetid;
       const p = document.createElement('p');
       p.textContent =  "Datasetid :" + intorecord.datasetid;
       const p1 = document.createElement('p');
@@ -68,7 +69,7 @@ request.onload = function () {
       const p26 = document.createElement('p');
       p26.textContent =  "geometry :" + intorecord.geometry.coordinates;
       container.appendChild(pplats);
-      pplats.appendChild(h1);
+      pplats.appendChild(h3);
       pplats.appendChild(p);
       pplats.appendChild(p1);
       pplats.appendChild(p2);
