@@ -18,15 +18,12 @@ request.onload = function () {
 
         data.records.forEach(foreachids => {
 
-                const recordsidys = document.createElement('div');
-                recordsidys.setAttribute('class', 'recordsidys');
+                const recordcontainer = document.createElement('div');
+                recordcontainer.setAttribute('class', 'record-container');
 
                 const h3 = document.createElement('h3');
-                h3.setAttribute ('class', 'records-id-h3');
+                h3.setAttribute ('class', 'record-title');
                 h3.textContent = foreachids.recordid;
-
-               const information = document.createElement('div');
-               information.setAttribute ('class', 'information');
 
                const vendors = document.createElement('p');
                vendors.textContent = "vendor :" + foreachids.fields.vendor;
@@ -72,21 +69,20 @@ request.onload = function () {
                
         
 
-                container.appendChild(recordsidys);
-                recordsidys.appendChild(h3)
-                recordsidys.appendChild(information)
-                information.appendChild(resolutions)
-                information.appendChild(rester_ids)
-                information.appendChild(licenses)
-                information.appendChild(vendors)
-                information.appendChild(names)
-                information.appendChild(geo_point_2ds1)
-                information.appendChild(geo_point_2ds2)
-                information.appendChild(raster_service_urls)
-                information.appendChild(geo_shapes)
-                information.appendChild(coordinatess)
-                information.appendChild(resource_urls)
-                information.appendChild(record_timestamps)
+                container.appendChild(recordcontainer);
+                recordcontainer.appendChild(h3)
+                recordcontainer.appendChild(resolutions)
+                recordcontainer.appendChild(rester_ids)
+                recordcontainer.appendChild(licenses)
+                recordcontainer.appendChild(vendors)
+                recordcontainer.appendChild(names)
+                recordcontainer.appendChild(geo_point_2ds1)
+                recordcontainer.appendChild(geo_point_2ds2)
+                recordcontainer.appendChild(raster_service_urls)
+                recordcontainer.appendChild(geo_shapes)
+                recordcontainer.appendChild(coordinatess)
+                recordcontainer.appendChild(resource_urls)
+                recordcontainer.appendChild(record_timestamps)
 
 
                 
