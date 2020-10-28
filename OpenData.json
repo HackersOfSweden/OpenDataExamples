@@ -1,0 +1,137 @@
+[
+ {
+   "Namn": "adresser",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "Biograferoteatrar",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "bullerkartlaggning-2017-vagtrafik-15m-lmax",
+   "Description from HBG Öppet Data": "Omgivningsbuller avseende år 2016. Beräkningarna bygger bland annat på uppgifter om skyltad hastighet, trafikflöden (cirka 280 mätpunkter), vägbredd och beläggning. Trafikverket har levererat uppgifter om tågtrafik på Västkustbanan, Skånebanan och Rååbanan. Resultatet presenteras som ekvivalent ljudnivå (Leq). Trafikflödena presenteras avrundade till närmaste 100-tal och andel tung trafik i procent av den totala mängden.",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "byggnadsyta",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "cykelpumpar",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "flygfoto",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "Fritidsanlaggningar",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "kartografi",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "kartografilinje",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "kartografilinjehöjd",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "kartografimarkvatten",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "kartografisk-text-mark-och-vatten",
+   "Description from HBG Öppet Data": "Innehåller namn på t.ex. badplatser, parker och vattendrag.",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "Konstverkofontaner",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "luften-i-helsingborg",
+   "Description from HBG Öppet Data": "Helsingborg stad har sedan 1989 kontinuerligt övervakat luftkvaliteten i kommunen genom att mäta halterna av föroreningar i luften, exempelvis kvävedioxid (NO2), svaveldioxid (SO2), ozon och partiklar (PM10, PM2,5). Mätningarna syftar dels till att bevaka miljökvalitetsnormer, vars syfte är att skydda människors hälsa, dels att ge Helsingborg underlag för stads- och trafikplanering, samt att ge allmänheten, forskning och företag tillgång högkvalitativ miljödata. Mätningar utförs i centrala delar där många människor vistas och där halterna förväntas vara höga, vilket innebär mätningar i trafiknära miljöer.",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "markpunkt",
+   "Description from HBG Öppet Data": "Punkter som visar var det finns t.ex. träd och buskar. ",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "Parkeringsplatserrorelsehindrade",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "pågåendeplaner",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "rattighetslinje",
+   "Description from HBG Öppet Data": "Lagret innehåller rättigheter lagrade som linjeobjekt. ",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "skolorhtml",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "språktrafikLinje",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "Stomnatspunkt",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "vattenkonstruktionslinje",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "Vattenpunk",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "VattenLinje",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "wifipunkter",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "väglinje",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+ {
+   "Namn": "öppetAPItillhelsingborgwordpress",
+   "Description from HBG Öppet Data": "",
+   "FIELD3": " "
+ },
+]
