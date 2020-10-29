@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <title>Kartografisk text bebyggelse</title>
+        <script src = "kartografisk-text-bebyggelse.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly" defer></script>
+        <style>
+            body {
+                width: 80%;
+                margin: 10px;
+                padding: 10px;
+                box-sizing: border-box;
+                font-family: 'Roboto', sans-serif;
+                height: 100%;
+            }
+            #root {
+                position: relative;
+                padding: 10px;
+                width: 100%;
+                height: 100%;
+            }
+            .map_container {
+                background-color: GAINSBORO;
+                border : 2px solid black;
+                margin: 10px;
+                height: 600;
+                width: 800;
+                left: 5%;
+                right: 5%;
+                display: inline-block;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "root"><h1>Kartografisk text bebyggelse</h1></div>
+    </body>
+</html>
