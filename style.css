@@ -1,0 +1,36 @@
+/* {
+    margin: 0;
+    padding: 0;
+}
+*/
+
+.body {
+    font-family: Roboto,system,Segoe UI,Tahoma,-apple-system;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.container, a {
+    text-decoration: none;
+    color: #000;
+}
+
+.record-title {
+    font-size: 30px;
+    color: #000;
+}
+
+a:hover, .record-title:hover {
+    color: rgb(138, 137, 137);
+}
+
+.pplats {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 15px;
+}
+

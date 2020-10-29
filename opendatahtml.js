@@ -23,8 +23,9 @@ request.onload = function () {
             const pplats = document.createElement('div');
             pplats.setAttribute('class', 'pplats');
 
-            const h1 = document.createElement('h1');
-            h1.textContent = intoNamn.Namn;
+            const h3 = document.createElement('h3');
+            h3.setAttribute('class', 'record-title')
+            h3.textContent = intoNamn.Namn;
 
             const p = document.createElement('p');
             p.textContent = "datasetid : " + intoNamn.Namn;
@@ -32,7 +33,7 @@ request.onload = function () {
 
             container.appendChild(link);
             link.appendChild(pplats);
-            pplats.appendChild(h1);
+            pplats.appendChild(h3);
             pplats.appendChild(p);
 
             // });
