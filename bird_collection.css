@@ -1,0 +1,49 @@
+/*To align the Header on the center*/
+.headline {
+    text-align: center;
+}
+
+/*Style of the individual birdnames*/
+.record-title {
+    border: 1px solid #e5e5e5;
+    background: linear-gradient(to bottom, #fff, #f9f9f9);
+    padding: 15px;
+    align-items: center;
+    height: auto;
+    opacity: 0.7;
+    color: blue;
+    font-weight: bold;
+}
+
+.record-title:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/*Information related to the birds*/
+.record-paragraph {
+    background-color:rgb(235, 197, 233,0.7);
+    display: none;
+    height: auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+/*The colorful bird background to the whole page*/
+body {
+    background-image: url(bird-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* The info container style*/
+.record-container {
+    width: 50%;
+    margin: auto;
+    
+}
+
+/* To place the map on the center*/
+.record-map {
+    text-align: center;
+}
