@@ -3,7 +3,7 @@ const app = document.getElementById('root');
 
 //Creating and apending a div element with class container to the root element
 const container = document.createElement('div');
-container.setAttribute('class', 'container');
+container.setAttribute('class', 'container1');
 app.appendChild(container);
 
 //Creating new XMLHTTP request
@@ -31,15 +31,15 @@ request.onload = function () {
             
             //Creating a record-container element and assigning class to it
             const recordContainer = document.createElement('div');
-            recordContainer.setAttribute('class', 'record-container');
+            recordContainer.setAttribute('class', 'record-container1');
             
             //Creating a record-title element and assigning class to it
             const recordTitle = document.createElement('h3');
-            recordTitle.setAttribute('class', 'record-title');
+            recordTitle.setAttribute('class', 'record-title1');
 
             //Creating a recordParagraph element and assigning class to it
             const recordParagraph = document.createElement('p');
-            recordParagraph.setAttribute('class', 'record-paragraph');
+            recordParagraph.setAttribute('class', 'record-paragraph1');
 
             //Setting innerHTML to Record [counter] and incrementing 
             //counter to display correctly for next record
